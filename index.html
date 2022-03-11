@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challange</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+
+</head>
+<body>
+    
+    <section id="listingWrapper">
+        <div class="container mt-2">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="accordion shadow" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                DB Record Form
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <div class="row justify-content-center inputRow">
+                                  <div class="col-md-4">
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="A Table Data" data-type="all" aria-label="A Table Data" aria-describedby="saveAData">
+                                            <button class="btn btn-success btnSave" data-table="a"  type="button" id="saveAData" disabled>Save</button>
+                                        </div>
+                                  </div>
+                                    <div class="col-md-4">
+                                        <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="B Table Data" data-type="numeric" aria-label="B Table Data" aria-describedby="saveBData">
+                                        <button class="btn btn-success btnSave" data-table="b"  type="button" id="saveBData" disabled>Save</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="C Table Data" data-type="all" aria-label="C Table Data" aria-describedby="saveCData">
+                                            <button class="btn btn-success btnSave" data-table="c"  type="button" id="saveCData" disabled>Save</button>
+                                        </div>
+                                    </div>
+                                  
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                         
+                </div>
+            </div>
+            </div>
+            <div class="row mt-3 justify-content-center ">
+                <div class="col-md-12 text-center listingButtons" role="group">
+                    <button type="button" class="btn btn-secondary mt-1" data-table="a" data-column="id" data-direction="ASC">Show A Table </button>
+                    <button type="button" class="btn btn-secondary mt-1" data-table="a,b,c" data-column="id" data-direction="ASC">Show A, B, C Tables</button>
+                    <button type="button" class="btn btn-secondary mt-1" data-table="c,b" data-column="id" data-direction="ASC">Show C, B Tables</button>
+                    <button type="button" class="btn btn-secondary mt-1" data-table="b" data-column="table_value" data-direction="ASC"> Show B Table<small>( Ascending) </small></button>
+                    <button type="button" class="btn btn-secondary mt-1" data-table="b" data-column="table_value" data-direction="DESC">Show B Table<small>( Descending) </small></button>
+                </div>
+            </div>
+            <div class="row  mt-3 justify-content-center">
+                <div class="col-sm-3 listingCardWrapper" data-for="a">
+                    <div class="card listing-card">
+                        <div class="card-header">
+                          A Table Values
+                        </div>
+                        <div class="card-body">
+                            <img src="./assets/images/loader.gif" class="loader">
+                        </div>
+                        <ul class="list-group list-group-flush d-none">
+                           
+                        </ul>
+                      </div>
+                </div>
+                <div class="col-md-3 listingCardWrapper" data-for="b">
+                    <div class="card listing-card">
+                        <div class="card-header">
+                          B Table Values
+                        </div>
+                        <div class="card-body">
+                            <img src="./assets/images/loader.gif" class="loader">
+                        </div>
+                        <ul class="list-group list-group-flush d-none">
+                           
+                        </ul>
+                      </div>
+                </div>
+                <div class="col-md-3 listingCardWrapper" data-for="c">
+                    <div class="card listing-card">
+                        <div class="card-header">
+                          C Table Values
+                        </div>
+                        <div class="card-body">
+                            <img src="./assets/images/loader.gif" class="loader">
+                        </div>
+                        <ul class="list-group list-group-flush d-none">
+                           
+                        </ul>
+                      </div>
+                </div>
+            </div>
+
+            <div class="row listingRow" id="listingRow">
+        
+            
+            </div>
+         
+    </section>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/operation.js"></script>
+    
+   
+</body>
+</html>

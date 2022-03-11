@@ -1,0 +1,18 @@
+.listing-card{
+    height: 100%;
+}
+
+.listing-card .loader{
+    width: 100px;
+    text-align: center;
+}
+
+.listing-card .card-body{
+    text-align: center;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: #6d757d!important;
+    color: white;
+    font-weight: bolder;
+}
