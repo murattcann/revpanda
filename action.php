@@ -12,7 +12,7 @@ try {
 const GET_ACTION = "getItems";
 const SAVE_ACTION = "saveItem";
  
-if(isset($_POST["action"]) && $_POST["action"] === "getItems"){
+if(isset($_POST["action"]) && $_POST["action"] === SAVE_ACTION){
     
     $table = $_POST["table"]. "_table";
     $orderColumn = $_POST["orderColumn"] ?? "id";
