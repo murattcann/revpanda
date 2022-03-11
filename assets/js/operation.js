@@ -79,8 +79,7 @@ $(document).on("keyup input",  ".inputRow input", function(){
     }
     if(value.length > 0 ) button.prop("disabled", false);
     else button.prop("disabled", true);
-
-    console.log(value);
+ 
 })
 
 
